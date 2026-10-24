@@ -80,91 +80,91 @@ The table below lists leading commercial vector drawing applications. Entries ar
 
 Explore community-driven, transparent, and self-hostable vector drawing applications and graphics frameworks. All repositories below are **sorted descending by real-time GitHub stargazer count**, complete with direct social stargazer badges.
 
-### 1. 📝 [Rnote](https://github.com/flxzt/rnote) [![GitHub stars](https://img.shields.io/github/stars/flxzt/rnote?style=social&color=white)](https://github.com/flxzt/rnote/stargazers)
+### 1. 📝 [Rnote](https://github.com/flxzt/rnote) [![GitHub_Stars](https://img.shields.io/github/stars/flxzt/rnote?style=social&color=white)](https://github.com/flxzt/rnote/stargazers)
 - **Primary Focus:** Vector-based sketching, handwritten notes, and document annotation.
 - **License:** GPL-3.0 | **Language:** Rust (GTK4 / Libadwaita) | **Platforms:** Linux (touchscreen/tablets), Windows, macOS.
 - **Key Features:** Built from the ground up in Rust for ultra-low latency stylus input. Features an infinite canvas, native pressure-sensitive vector ink strokes, SVG/PDF document import and export, shape recognition, and full stylus button customization.
 - **Caveat:** Primarily targeted at desktop and tablet Linux distributions; mobile Android/iOS ports require experimental containers or community packages.
 
-### 2. 🦀 [VectorCraft](https://github.com/storytold/vectorcraft) [![GitHub stars](https://img.shields.io/github/stars/storytold/vectorcraft?style=social&color=white)](https://github.com/storytold/vectorcraft/stargazers)
+### 2. 🦀 [VectorCraft](https://github.com/storytold/vectorcraft) [![GitHub_Stars](https://img.shields.io/github/stars/storytold/vectorcraft?style=social&color=white)](https://github.com/storytold/vectorcraft/stargazers)
 - **Primary Focus:** High-performance, pure Rust vector art creation engine.
 - **License:** MIT / Apache-2.0 | **Language:** Rust | **Platforms:** Cross-platform (Desktop, Touch-enabled WebAssembly).
 - **Key Features:** Engineered from scratch in pure Rust without bulky legacy frameworks. Offers blazing-fast path rasterization, GPU-accelerated Bézier math, and minimal memory footprint suitable for mobile WebAssembly runtimes.
 - **Caveat:** Core focus is currently an architectural vector engine; specialized mobile UI shells require embedding into native touch containers.
 
-### 3. 🖼️ [Vue Fabric Editor](https://github.com/ikuaitu/vue-fabric-editor) [![GitHub stars](https://img.shields.io/github/stars/ikuaitu/vue-fabric-editor?style=social&color=white)](https://github.com/ikuaitu/vue-fabric-editor/stargazers)
+### 3. 🖼️ [Vue Fabric Editor](https://github.com/ikuaitu/vue-fabric-editor) [![GitHub_Stars](https://img.shields.io/github/stars/ikuaitu/vue-fabric-editor?style=social&color=white)](https://github.com/ikuaitu/vue-fabric-editor/stargazers)
 - **Primary Focus:** Web & mobile web-based vector graphics and template design editor.
 - **License:** MIT | **Language:** Vue 3, TypeScript, Fabric.js | **Platforms:** Mobile Web, PWA, Desktop Browser.
 - **Key Features:** Comprehensive vector and graphic design workspace with touch-gesture support, rich shape libraries, font management, SVG path manipulation, and batch image/vector exporting.
 - **Caveat:** Requires a web view or browser runtime; not packaged as an offline native mobile APK/IPA out of the box.
 
-### 4. 🌐 [SVG-Edit](https://github.com/SVG-Edit/svgedit) [![GitHub stars](https://img.shields.io/github/stars/SVG-Edit/svgedit?style=social&color=white)](https://github.com/SVG-Edit/svgedit/stargazers)
+### 4. 🌐 [SVG-Edit](https://github.com/SVG-Edit/svgedit) [![GitHub_Stars](https://img.shields.io/github/stars/SVG-Edit/svgedit?style=social&color=white)](https://github.com/SVG-Edit/svgedit/stargazers)
 - **Primary Focus:** The reference in-browser and mobile-friendly SVG vector editor.
 - **License:** MIT | **Language:** JavaScript / HTML5 | **Platforms:** Mobile Browsers, Tablets, PWA, Desktop.
 - **Key Features:** Proven HTML5-based vector graphics editor that runs entirely client-side without server dependencies. Supports standard SVG elements, freehand sketching, Bézier curves, path nodes, text elements, and immediate raw SVG source inspection.
 - **Caveat:** The user interface reflects traditional desktop design paradigms, requiring stylus precision on smaller phone screens.
 
-### 5. 〰️ [SVG Path Editor](https://github.com/Yqnn/svg-path-editor) [![GitHub stars](https://img.shields.io/github/stars/Yqnn/svg-path-editor?style=social&color=white)](https://github.com/Yqnn/svg-path-editor/stargazers)
+### 5. 〰️ [SVG Path Editor](https://github.com/Yqnn/svg-path-editor) [![GitHub_Stars](https://img.shields.io/github/stars/Yqnn/svg-path-editor?style=social&color=white)](https://github.com/Yqnn/svg-path-editor/stargazers)
 - **Primary Focus:** Visual creation and interactive manipulation of raw SVG path data.
 - **License:** MIT | **Language:** TypeScript / Vue | **Platforms:** Touch Web, Mobile Browser, PWA.
 - **Key Features:** Highly focused, intuitive tool for creating and fine-tuning Bézier curves (`C`, `S`, `Q`, `T`), lines (`L`, `H`, `V`), and arcs (`A`). Features touch-draggable control handles, coordinate snapping, and instant path minification.
 - **Caveat:** Specialized strictly for single-path geometric editing rather than multi-layered full-canvas illustrations.
 
-### 6. 🏫 [OpenBoard](https://github.com/OpenBoard-org/OpenBoard) [![GitHub stars](https://img.shields.io/github/stars/OpenBoard-org/OpenBoard?style=social&color=white)](https://github.com/OpenBoard-org/OpenBoard/stargazers)
+### 6. 🏫 [OpenBoard](https://github.com/OpenBoard-org/OpenBoard) [![GitHub_Stars](https://img.shields.io/github/stars/OpenBoard-org/OpenBoard?style=social&color=white)](https://github.com/OpenBoard-org/OpenBoard/stargazers)
 - **Primary Focus:** Interactive vector whiteboard and presentation sketching application.
 - **License:** GPL-3.0 | **Language:** C++ (Qt) | **Platforms:** Linux Tablets, Windows, macOS.
 - **Key Features:** Clean, distraction-free vector drawing designed for stylus inputs and touch displays. Supports vector pens, highlighters, geometric compasses, virtual rulers, and multi-page vector PDF presentations.
 - **Caveat:** Built primarily for classroom and lecture hardware; lacks specialized illustration tools like Boolean path uniting or gradient mesh.
 
-### 7. 🎯 [Method Draw](https://github.com/methodofaction/Method-Draw) [![GitHub stars](https://img.shields.io/github/stars/methodofaction/Method-Draw?style=social&color=white)](https://github.com/methodofaction/Method-Draw/stargazers)
+### 7. 🎯 [Method Draw](https://github.com/methodofaction/Method-Draw) [![GitHub_Stars](https://img.shields.io/github/stars/methodofaction/Method-Draw?style=social&color=white)](https://github.com/methodofaction/Method-Draw/stargazers)
 - **Primary Focus:** Lightweight, clean vector drawing tool built for rapid SVG production.
 - **License:** MIT | **Language:** JavaScript | **Platforms:** Mobile Web, Tablets, Desktop.
 - **Key Features:** Streamlined fork of SVG-edit with a modernized, uncluttered aesthetic. Offers responsive canvas resizing, essential vector shapes, line and curve tools, color pickers, and clean SVG export.
 - **Caveat:** Lacks advanced layer blending modes, clipping masks, and auto-tracing capabilities.
 
-### 8. ⚡ [GodSVG](https://github.com/MewPurPur/GodSVG) [![GitHub stars](https://img.shields.io/github/stars/MewPurPur/GodSVG?style=social&color=white)](https://github.com/MewPurPur/GodSVG/stargazers)
+### 8. ⚡ [GodSVG](https://github.com/MewPurPur/GodSVG) [![GitHub_Stars](https://img.shields.io/github/stars/MewPurPur/GodSVG?style=social&color=white)](https://github.com/MewPurPur/GodSVG/stargazers)
 - **Primary Focus:** Structured, human-readable SVG file editing powered by the Godot Engine.
 - **License:** MIT | **Language:** GDScript / C++ | **Platforms:** Desktop, Web, Android-compatible foundation.
 - **Key Features:** Treats SVG as structured data rather than an opaque canvas. Guarantees zero unnecessary SVG bloat, preserves custom markup formatting, and serves as the underlying engine for touch-native ports like VectorTouch.
 - **Caveat:** Currently in active development; desktop-centric UI is being adapted for handheld devices.
 
-### 9. 🖋️ [Inkpad](https://github.com/sprang/Inkpad) [![GitHub stars](https://img.shields.io/github/stars/sprang/Inkpad?style=social&color=white)](https://github.com/sprang/Inkpad/stargazers)
+### 9. 🖋️ [Inkpad](https://github.com/sprang/Inkpad) [![GitHub_Stars](https://img.shields.io/github/stars/sprang/Inkpad?style=social&color=white)](https://github.com/sprang/Inkpad/stargazers)
 - **Primary Focus:** The premier open-source iPad vector illustration application.
 - **License:** MPL-2.0 | **Language:** Objective-C | **Platforms:** iPadOS (App Store & Source Build).
 - **Key Features:** Designed from scratch specifically for the iPad touch architecture. Handles thousands of shapes with zero lag, supports unlimited layers, compound paths, Bézier pen tool, Boolean operators (Unite, Intersect, Exclude, Subtract), gradient fills, and direct SVG/PDF export.
 - **Caveat:** Exclusive to the Apple iPad ecosystem; codebase is mature but sees infrequent upstream updates.
 
-### 10. 🦋 [Butterfly](https://github.com/LinwoodDev/Butterfly) [![GitHub stars](https://img.shields.io/github/stars/LinwoodDev/Butterfly?style=social&color=white)](https://github.com/LinwoodDev/Butterfly/stargazers)
+### 10. 🦋 [Butterfly](https://github.com/LinwoodDev/Butterfly) [![GitHub_Stars](https://img.shields.io/github/stars/LinwoodDev/Butterfly?style=social&color=white)](https://github.com/LinwoodDev/Butterfly/stargazers)
 - **Primary Focus:** Minimalist cross-platform vector sketching and infinite canvas note application.
 - **License:** AGPL-3.0 | **Language:** Dart (Flutter) | **Platforms:** Android, iOS, Windows, Linux, Web.
 - **Key Features:** Built with Flutter for smooth 60/120 FPS performance across phones and tablets. Features an infinite canvas, stylus and palm rejection support, editable vector line art, shape insertion, local-first offline storage, and SVG/PDF export.
 - **Caveat:** Prioritizes visual notes and diagrammatic sketches over complex multi-stop gradient illustrations.
 
-### 11. 📐 [TouchVG](https://github.com/rhcad/TouchVG) [![GitHub stars](https://img.shields.io/github/stars/rhcad/TouchVG?style=social&color=white)](https://github.com/rhcad/TouchVG/stargazers)
+### 11. 📐 [TouchVG](https://github.com/rhcad/TouchVG) [![GitHub_Stars](https://img.shields.io/github/stars/rhcad/TouchVG?style=social&color=white)](https://github.com/rhcad/TouchVG/stargazers)
 - **Primary Focus:** Lightweight 2D vector drawing framework for mobile operating systems.
 - **License:** BSD-3-Clause | **Language:** C++ / Java / Objective-C | **Platforms:** iOS, Android, Windows.
 - **Key Features:** High-speed cross-platform core library engineered for custom mobile vector app development. Implements gestures, spatial indexing, path intersections, undo/redo stacks, and CAD-style snapping.
 - **Caveat:** It is a developer framework and toolkit rather than a ready-to-use end-user illustration app.
 
-### 12. 🔌 [FidoCadJ](https://github.com/FidoCadJ/FidoCadJ) [![GitHub stars](https://img.shields.io/github/stars/FidoCadJ/FidoCadJ?style=social&color=white)](https://github.com/FidoCadJ/FidoCadJ/stargazers)
+### 12. 🔌 [FidoCadJ](https://github.com/FidoCadJ/FidoCadJ) [![GitHub_Stars](https://img.shields.io/github/stars/FidoCadJ/FidoCadJ?style=social&color=white)](https://github.com/FidoCadJ/FidoCadJ/stargazers)
 - **Primary Focus:** Multi-platform 2D vector CAD editor with specialized Android support.
 - **License:** GPL-3.0 | **Language:** Java | **Platforms:** Android, macOS, Linux, Windows.
 - **Key Features:** Highly accessible vector tool equipped with built-in electronic, logic, and schematic symbol libraries. Exports to PDF, EPS, PGF for LaTeX, SVG, and high-resolution PNG.
 - **Caveat:** Tailored specifically toward electronic schematics and technical drafting rather than freehand creative illustration.
 
-### 13. 🎨 [FreePaint](https://github.com/pastthepixels/FreePaint) [![GitHub stars](https://img.shields.io/github/stars/pastthepixels/FreePaint?style=social&color=white)](https://github.com/pastthepixels/FreePaint/stargazers)
+### 13. 🎨 [FreePaint](https://github.com/pastthepixels/FreePaint) [![GitHub_Stars](https://img.shields.io/github/stars/pastthepixels/FreePaint?style=social&color=white)](https://github.com/pastthepixels/FreePaint/stargazers)
 - **Primary Focus:** Native Material Design 3 vector drawing app for Android.
 - **License:** GPL-3.0 | **Language:** Kotlin | **Platforms:** Android (Available via F-Droid & GitHub Releases).
 - **Key Features:** Lightweight, ad-free vector drawing app that saves and loads standard SVG files directly on mobile storage. Supports open and closed Bézier paths, fill/stroke customization, eraser tools, and marquee selection.
 - **Caveat:** Lacks complex illustration features such as multiple layers, Boolean operations, text objects, and gradient meshes.
 
-### 14. 🦦 [Capy Canvas](https://github.com/capyatelier/capycanvas) [![GitHub stars](https://img.shields.io/github/stars/capyatelier/capycanvas?style=social&color=white)](https://github.com/capyatelier/capycanvas/stargazers)
+### 14. 🦦 [Capy Canvas](https://github.com/capyatelier/capycanvas) [![GitHub_Stars](https://img.shields.io/github/stars/capyatelier/capycanvas?style=social&color=white)](https://github.com/capyatelier/capycanvas/stargazers)
 - **Primary Focus:** Modern GPU-accelerated illustration and painting studio.
 - **License:** GPL-3.0 | **Language:** Rust (wgpu) | **Platforms:** iPad, Android, Linux, Windows, macOS, Web.
 - **Key Features:** Next-generation creative app engineered with Rust and wgpu for 120+ FPS canvas rendering. Features workspaces for sketching, painting, and vector-compatible workflows with HDR color support.
 - **Caveat:** Actively evolving in public alpha; mobile touch ergonomics are undergoing rapid iteration.
 
-### 15. 📱 [VectorTouch](https://github.com/syntaxerror247/VectorTouch) [![GitHub stars](https://img.shields.io/github/stars/syntaxerror247/VectorTouch?style=social&color=white)](https://github.com/syntaxerror247/VectorTouch/stargazers)
+### 15. 📱 [VectorTouch](https://github.com/syntaxerror247/VectorTouch) [![GitHub_Stars](https://img.shields.io/github/stars/syntaxerror247/VectorTouch?style=social&color=white)](https://github.com/syntaxerror247/VectorTouch/stargazers)
 - **Primary Focus:** Touch-optimized mobile SVG editor for Android devices.
 - **License:** MIT | **Language:** GDScript (Godot Engine) | **Platforms:** Android (Google Play & GitHub Releases).
 - **Key Features:** Brings the power of structured SVG editing to mobile screens with touch-friendly handles, clean node manipulation, and direct filesystem SVG saving.
