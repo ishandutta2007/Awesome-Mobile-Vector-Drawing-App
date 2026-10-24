@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="45%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="bezierGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+
+    <radialGradient id="meshGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.28" />
+      <stop offset="55%" stop-color="#06b6d4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      @keyframes dashAnim {
+        0% { stroke-dashoffset: 800; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.04); }
+      }
+      @keyframes floatPill1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes floatPill2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes handlePulse {
+        0%, 100% { r: 5; fill: #38bdf8; }
+        50% { r: 7.5; fill: #f43f5e; }
+      }
+      .anim-path {
+        stroke-dasharray: 800;
+        animation: dashAnim 12s linear infinite alternate;
+      }
+      .anim-glow {
+        animation: pulseGlow 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .anim-pill-1 {
+        animation: floatPill1 5s ease-in-out infinite;
+      }
+      .anim-pill-2 {
+        animation: floatPill2 6s ease-in-out infinite;
+      }
+      .handle-node {
+        animation: handlePulse 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint / Canvas Grid -->
+  <g opacity="0.08" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="100" y1="0" x2="100" y2="420" />
+    <line x1="250" y1="0" x2="250" y2="420" />
+    <line x1="400" y1="0" x2="400" y2="420" />
+    <line x1="550" y1="0" x2="550" y2="420" />
+    <line x1="700" y1="0" x2="700" y2="420" />
+    <line x1="850" y1="0" x2="850" y2="420" />
+    <line x1="1000" y1="0" x2="1000" y2="420" />
+    <line x1="1150" y1="0" x2="1150" y2="420" />
+  </g>
+
+  <!-- Ambient Glowing Center Halo -->
+  <circle cx="600" cy="200" r="380" fill="url(#meshGlow)" class="anim-glow" />
+
+  <!-- Dynamic Vector Bezier Construction Paths (Background Dynamics) -->
+  <g opacity="0.45" filter="url(#softGlow)">
+    <!-- Primary Flowing Bezier Curve -->
+    <path class="anim-path" d="M 50 330 C 260 140, 480 390, 720 180 S 1020 90, 1150 250" fill="none" stroke="url(#bezierGrad)" stroke-width="3" />
+    <!-- Secondary Counter Curve -->
+    <path class="anim-path" d="M 80 120 C 320 280, 520 70, 780 290 S 1080 320, 1140 100" fill="none" stroke="url(#accentGrad2)" stroke-width="2" stroke-dasharray="10 14" opacity="0.7" />
+  </g>
+
+  <!-- Bezier Control Handles & Tangent Lines (Vector Editor Aesthetics) -->
+  <g opacity="0.5">
+    <!-- Tangent line 1 -->
+    <line x1="200" y1="210" x2="260" y2="140" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="260" y1="140" x2="320" y2="70" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="200" cy="210" r="4" fill="#38bdf8" />
+    <circle cx="320" cy="70" r="4" fill="#38bdf8" />
+    <rect x="256" y="136" width="8" height="8" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+
+    <!-- Tangent line 2 -->
+    <line x1="680" y1="230" x2="720" y2="180" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="720" y1="180" x2="760" y2="130" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="680" cy="230" r="4" fill="#c084fc" />
+    <circle cx="760" cy="130" r="4" fill="#c084fc" />
+    <rect x="716" y="176" width="8" height="8" fill="#ffffff" stroke="#9333ea" stroke-width="2" />
+
+    <!-- Pulsing Node Handles -->
+    <circle cx="50" cy="330" class="handle-node" />
+    <circle cx="1150" cy="250" class="handle-node" />
+  </g>
+
+  <!-- Interactive Floating Feature Badges (Dynamic, Out of Title Area) -->
+  <g class="anim-pill-1" transform="translate(60, 48)">
+    <rect width="180" height="34" rx="17" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="18" cy="17" r="5" fill="#38bdf8" />
+    <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">✦ Bezier Paths &amp; SVG</text>
+  </g>
+
+  <g class="anim-pill-2" transform="translate(960, 52)">
+    <rect width="180" height="34" rx="17" fill="#1e293b" fill-opacity="0.85" stroke="#ec4899" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="18" cy="17" r="5" fill="#ec4899" />
+    <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">⚡ Touch &amp; Apple Pencil</text>
+  </g>
+
+  <g class="anim-pill-2" transform="translate(80, 348)">
+    <rect width="170" height="34" rx="17" fill="#1e293b" fill-opacity="0.85" stroke="#10b981" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="18" cy="17" r="5" fill="#10b981" />
+    <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">📱 iPadOS &amp; Android</text>
+  </g>
+
+  <g class="anim-pill-1" transform="translate(950, 345)">
+    <rect width="190" height="34" rx="17" fill="#1e293b" fill-opacity="0.85" stroke="#f59e0b" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="18" cy="17" r="5" fill="#f59e0b" />
+    <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">🔓 FOSS &amp; SaaS Platforms</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Guaranteed High Contrast & Perfectly Centered -->
+  <g id="foreground-content">
+    <!-- Top Category Eyebrow Pill -->
+    <g transform="translate(460, 78)">
+      <rect width="280" height="30" rx="15" fill="#1e1b4b" fill-opacity="0.9" stroke="#6366f1" stroke-width="1.5" />
+      <text x="140" y="20" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#a5b4fc">✨ CURATED ECOSYSTEM DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="1" fill="#ffffff" filter="url(#shadow)">
+      AWESOME MOBILE VECTOR DRAWING APPS
+    </text>
+
+    <!-- Gradient Accent Sub-bar under Title -->
+    <rect x="420" y="186" width="360" height="4" rx="2" fill="url(#primaryGrad)" />
+
+    <!-- Subtitle -->
+    <text x="600" y="228" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#cbd5e1" filter="url(#shadow)">
+      Touch-Optimized Vector Illustration, Stylus Bezier Editing &amp; Mobile SVG Tools
+    </text>
+
+    <!-- Platform Highlights & Badges line -->
+    <g transform="translate(600, 275)">
+      <!-- Pill 1 -->
+      <g transform="translate(-290, 0)">
+        <rect x="0" y="0" width="135" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="67" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#94a3b8">iPad &amp; Apple Pencil</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-140, 0)">
+        <rect x="0" y="0" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="65" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Android Tablets</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(5, 0)">
+        <rect x="0" y="0" width="130" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="65" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Infinite Canvas</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(150, 0)">
+        <rect x="0" y="0" width="140" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <text x="70" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#94a3b8">SVG / PDF / EPS</text>
+      </g>
+    </g>
+  </g>
+</svg>
